@@ -133,6 +133,9 @@ FIND_PACKAGE( BISON )
 FIND_PACKAGE( FLEX )
 FIND_PACKAGE( Threads)
 
+#required for mni_autoreg/minctracc
+FIND_PACKAGE( Liblbfgs REQUIRED )
+
 #required for bicpl
 IF(USE_SYSTEM_NETPBM) # else we will use bundled libppm
   FIND_PACKAGE( NETPBM QUIET )
